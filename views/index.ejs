@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+</head>
+<body>
+    <h1>Bucket List :<small>Where would you like to go?</small></h1>
+
+    <!--I created a table  with some labels and input text fields,This is just the 
+    structure of how it will look like -->
+    <table>
+        <tr>
+            <td>
+                <!--Here I`m using a function called "SubmitForm" that is located
+                     in my js/add.js, I explain more about this function in the add.js file-->
+                <form onsubmit="event.preventDefault();SubmitForm();" autocomplete="off">
+                    <div>
+                        <!--SECURITY MEASURE,  an error msg will be shown
+                        if you don`t give your name.-->
+                        <label>Name*</label><label class="validation-error hide" id="NameValidationError">This field is required.</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>Nationality</label>
+                        <input type="text" name="nationality" id="nationality">
+                    </div>
+                    <div>
+                        <label>Dream Country</label>
+                        <input type="text" name="dream" id="dream">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <!--Another table will be displayed with the input text from the user-->
+                <table class="list" id="BucketList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Nationality</th>
+                            <th>Dream Country</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Here I`m calling all the CRUD js functions. -->
+    <script src="js/add.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/delete.js"></script>
+
+
+
+
+
+
+    </header>
+
+
+
+
+</body>
+</html>

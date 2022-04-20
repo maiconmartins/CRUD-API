@@ -1,0 +1,31 @@
+{
+  "name": "ca2_bucketlist",
+  "version": "1.0.0",
+  "description": "crud app with express and mongo db",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiconmartins/Ca2_BucketList.git"
+  },
+  "author": "Maicon Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maiconmartins/Ca2_BucketList/issues"
+  },
+  "homepage": "https://github.com/maiconmartins/Ca2_BucketList#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {}
+}
